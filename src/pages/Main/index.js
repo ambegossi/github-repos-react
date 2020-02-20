@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import Container from '../../components/Container';
-import { Form, SubmitButton, List, Error } from './styles';
+import { Form, SubmitButton, List, ErrorMessage } from './styles';
 
 export default class Main extends Component {
   // eslint-disable-next-line react/state-in-constructor
@@ -69,7 +69,7 @@ export default class Main extends Component {
       });
     } catch (err) {
       this.setState({ error: true });
-      console.log(err.message);
+      this.setState({ errorMessage: err.message });
     } finally {
       this.setState({ loading: false });
     }
@@ -102,7 +102,7 @@ export default class Main extends Component {
           </SubmitButton>
         </Form>
 
-        <Error>{errorMessage}</Error>
+        <ErrorMessage>{errorMessage}</ErrorMessage>
 
         <List>
           {repositories.map(repository => (

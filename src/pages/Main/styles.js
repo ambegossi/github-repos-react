@@ -16,7 +16,7 @@ export const Form = styled.form`
   }
 `;
 
-export const Error = styled.p`
+export const ErrorMessage = styled.p`
   margin-top: 5px;
   color: #ff6b6b;
 `;
