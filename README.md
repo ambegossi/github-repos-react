@@ -13,5 +13,5 @@
 </p>
 
 
-![GitHub-Repos](.github/gh-repos.gif)
+![GitHub-Repos](.github/repos-gh.gif)
 
