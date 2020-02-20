@@ -48,11 +48,12 @@ export default class Main extends Component {
     try {
       const { newRepo, repositories } = this.state;
 
-      if (newRepo === '') throw 'Você precisa informar um repositório';
+      if (newRepo === '')
+        throw new Error('Você precisa informar um repositório');
 
       const existsRepo = repositories.find(r => r.name === newRepo);
 
-      if (existsRepo) throw 'Repositório duplicado';
+      if (existsRepo) throw new Error('Repositório duplicado');
 
       const response = await api.get(`/repos/${newRepo}`);
 
@@ -66,9 +67,9 @@ export default class Main extends Component {
         error: false,
         errorMessage: '',
       });
-    } catch (error) {
+    } catch (err) {
       this.setState({ error: true });
-      this.setState({ errorMessage: error });
+      console.log(err.message);
     } finally {
       this.setState({ loading: false });
     }
