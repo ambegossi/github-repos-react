@@ -66,7 +66,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/lukemorales/react-github-repo-list
+$ git clone https://github.com/ambegossi/github-repos-react
 
 # Go into the repository
 $ cd react-github-repo-list
@@ -79,7 +79,7 @@ $ yarn start
 ```
 
 ## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/lukemorales/react-github-repo-list/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](LICENSE.md) for more information.
 
 ---
 
