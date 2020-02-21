@@ -27,9 +27,7 @@
     <img alt="Stargazers" src="https://img.shields.io/github/stars/ambegossi/github-repos-react?style=social">
   </a>
 
-
 </p>
-
 
 <p align="center">
   <a href="https://www.codacy.com/manual/ambegossi/github-repos-react?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ambegossi/github-repos-react&amp;utm_campaign=Badge_Grade">
@@ -54,11 +52,11 @@
 
 This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
 
--  [ReactJS](https://reactjs.org/)
--  [React Router v4](https://github.com/ReactTraining/react-router)
--  [styled-components](https://www.styled-components.com/)
--  [GitHub REST API v3](https://developer.github.com/v3/)
--  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+- [ReactJS](https://reactjs.org/)
+- [React Router v4](https://github.com/ReactTraining/react-router)
+- [styled-components](https://www.styled-components.com/)
+- [GitHub REST API v3](https://developer.github.com/v3/)
+- [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## :information_source: How To Use
 
