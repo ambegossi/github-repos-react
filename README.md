@@ -52,7 +52,7 @@
 
 This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
 
--  [ReactJS](https://reactjs.org/)
+- [ReactJS](https://reactjs.org/)
 - [React Router v4](https://github.com/ReactTraining/react-router)
 - [styled-components](https://www.styled-components.com/)
 - [GitHub REST API v3](https://developer.github.com/v3/)
