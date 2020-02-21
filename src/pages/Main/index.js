@@ -51,7 +51,9 @@ export default class Main extends Component {
       if (newRepo === '')
         throw new Error('Você precisa informar um repositório');
 
-      const existsRepo = repositories.find(r => r.name === newRepo);
+      const existsRepo = repositories.find(
+        r => r.name.toUpperCase() === newRepo.toUpperCase()
+      );
 
       if (existsRepo) throw new Error('Repositório duplicado');
 
@@ -69,7 +71,12 @@ export default class Main extends Component {
       });
     } catch (err) {
       this.setState({ error: true });
-      this.setState({ errorMessage: err.message });
+      this.setState({
+        errorMessage:
+          err.message === 'Request failed with status code 404'
+            ? 'Repositório não encontrado'
+            : err.message,
+      });
     } finally {
       this.setState({ loading: false });
     }
@@ -93,7 +100,7 @@ export default class Main extends Component {
             onChange={this.handleInputChange}
           />
 
-          <SubmitButton loading={loading}>
+          <SubmitButton loading={loading ? 1 : 0}>
             {loading ? (
               <FaSpinner color="#FFF" size={14} />
             ) : (
