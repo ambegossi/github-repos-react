@@ -67,7 +67,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 $ git clone https://github.com/ambegossi/github-repos-react
 
 # Go into the repository
-$ cd react-github-repo-list
+$ cd github-repos-react
 
 # Install dependencies
 $ yarn install
